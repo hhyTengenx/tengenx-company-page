@@ -1,0 +1,101 @@
+@import 'tailwindcss';
+
+@theme {
+  /* 深色科技感配色 */
+  --color-background: hsl(220 15% 6%);
+  --color-foreground: hsl(0 0% 95%);
+  --color-primary: hsl(210 100% 50%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-muted: hsl(220 15% 12%);
+  --color-muted-foreground: hsl(215 20% 60%);
+  --color-accent: hsl(210 100% 50%);
+  --color-accent-foreground: hsl(0 0% 100%);
+  --color-border: hsl(220 15% 18%);
+  --color-card: hsl(220 15% 10%);
+  --color-card-foreground: hsl(0 0% 95%);
+  --color-glow: hsl(210 100% 60%);
+  --radius: 0.8rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 科技感动画效果 */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+}
+
+/* 产品卡片发光效果 */
+.card-glow {
+  transition: all 0.3s ease;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
+  transform: translateY(-4px);
+}
+
+/* Hero 视频/图片遮罩 */
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.6) 0%,
+    rgba(15, 23, 42, 0.8) 50%,
+    rgba(15, 23, 42, 1) 100%
+  );
+}
+
+/* 渐变边框 */
+.gradient-border {
+  border: 1px solid transparent;
+  background: linear-gradient(var(--color-card), var(--color-card)) padding-box,
+              linear-gradient(135deg, var(--color-primary), var(--color-glow)) border-box;
+}

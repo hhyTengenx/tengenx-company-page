@@ -1,25 +1,11 @@
-import createWithNextra from 'nextra'
+import type { NextConfig } from 'next'
 
-const withNextra = createWithNextra({
-  defaultShowCopyCode: true,
-  unstable_shouldAddLocaleToLinks: true,
-})
-
-
-/**
- * @type {import("next").NextConfig}
- */
-export default withNextra({
+const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
   reactStrictMode: true,
   cleanDistDir: true,
-  i18n: {
-    locales: ['zh', 'en'],
-    defaultLocale: 'zh',
-  },
-  sassOptions: {
-    silenceDeprecations: ['legacy-js-api'],
-  },
-})
+}
+
+export default nextConfig
