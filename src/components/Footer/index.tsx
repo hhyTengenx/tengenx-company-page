@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useLocale } from '@/lib/locale-context'
 import { footerTranslations } from '@/lib/i18n'
+import Logo from '@/components/Logo'
 
 export default function Footer() {
   const { locale } = useLocale()
@@ -13,13 +14,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
-                <svg className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" />
-                  <path d="M12 6v12M8 10h8" stroke="currentColor" strokeWidth="2" fill="none" />
-                </svg>
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <Logo size="sm" variant="blue" />
               <span className="text-xl font-bold text-foreground">{t.companyFullName}</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">

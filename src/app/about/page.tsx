@@ -8,9 +8,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 const teamMembers = [
-  { name: 'Dr. Wei Zhang', nameZh: '张伟博士', role: 'CEO & Co-founder', roleZh: 'CEO & 联合创始人', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
-  { name: 'Dr. Sarah Chen', nameZh: '陈晓博士', role: 'CTO & Co-founder', roleZh: 'CTO & 联合创始人', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80' },
-  { name: 'Michael Liu', nameZh: '刘明', role: 'Chief Robotics Officer', roleZh: '首席机器人官', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80' },
+  { name: 'Dr. Zhanghui Kuang', nameZh: '旷章辉博士', role: 'Founder & CEO', roleZh: '创始人 & CEO', desc: 'Ph.D. in AI from HKU, former Microsoft Asia Research, Huawei Noah\'s Ark Lab, SenseTime Industrial Robotics Head', descZh: '香港大学人工智能博士，曾任微软亚洲研究院、华为诺亚方舟实验室、商汤科技工业机器人事业部负责人', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
 ]
 
 // 滚动动画组件
@@ -321,7 +319,7 @@ export default function AboutPage() {
             </p>
           </ScrollSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+          <div className="max-w-2xl mx-auto">
             {teamMembers.map((member, index) => (
               <ScrollSection key={member.name}>
                 <div className="text-center">
@@ -340,8 +338,11 @@ export default function AboutPage() {
                   <h3 className="text-2xl font-bold mb-2 text-foreground">
                     {locale === 'zh' ? member.nameZh : member.name}
                   </h3>
-                  <p className="text-lg text-muted-foreground">
+                  <p className="text-lg text-primary mb-4">
                     {locale === 'zh' ? member.roleZh : member.role}
+                  </p>
+                  <p className="text-base text-muted-foreground leading-relaxed max-w-xl mx-auto">
+                    {locale === 'zh' ? member.descZh : member.desc}
                   </p>
                 </div>
               </ScrollSection>

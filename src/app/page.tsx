@@ -4,18 +4,19 @@ import { useLocale } from '@/lib/locale-context'
 import { homeTranslations } from '@/lib/i18n'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Logo from '@/components/Logo'
 
 const products = [
   {
-    id: 'north',
+    id: 'tx01',
     image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80',
   },
   {
-    id: 'wave',
+    id: 'tengenBrain',
     image: 'https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80',
   },
   {
-    id: 'craftnet',
+    id: 'tengenBuddy',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
   },
 ]
@@ -44,18 +45,20 @@ export default function HomePage() {
 
   const getProductTitle = (id: string) => {
     switch (id) {
-      case 'north': return t.northTitle
-      case 'wave': return t.waveTitle
-      case 'craftnet': return t.craftnetTitle
+      case 'tx01': return t.tx01Title
+      case 'tengenData': return t.tengenDataTitle
+      case 'tengenBrain': return t.tengenBrainTitle
+      case 'tengenBuddy': return t.tengenBuddyTitle
       default: return id
     }
   }
 
   const getProductDesc = (id: string) => {
     switch (id) {
-      case 'north': return t.northDesc
-      case 'wave': return t.waveDesc
-      case 'craftnet': return t.craftnetDesc
+      case 'tx01': return t.tx01Desc
+      case 'tengenData': return t.tengenDataDesc
+      case 'tengenBrain': return t.tengenBrainDesc
+      case 'tengenBuddy': return t.tengenBuddyDesc
       default: return ''
     }
   }
@@ -98,12 +101,9 @@ export default function HomePage() {
         <div className="relative h-full flex items-center justify-center">
           <div className="text-center max-w-4xl mx-auto px-6">
             {/* Logo */}
-            <div className="mb-8 animate-fade-up">
-              <div className="w-20 h-20 mx-auto rounded-xl bg-primary/20 flex items-center justify-center animate-pulse-glow">
-                <svg className="w-12 h-12 text-primary" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" />
-                  <path d="M12 6v12M8 10h8" stroke="currentColor" strokeWidth="2" fill="none" />
-                </svg>
+            <div className="mb-8 animate-fade-up flex justify-center">
+              <div className="w-20 h-20 rounded-xl bg-primary/10 flex items-center justify-center animate-pulse-glow p-2">
+                <Logo size="lg" variant="blue" />
               </div>
             </div>
 
