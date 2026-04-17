@@ -8,7 +8,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 const teamMembers = [
-  { name: 'Dr. Zhanghui Kuang', nameZh: '旷章辉博士', role: 'Founder & CEO', roleZh: '创始人 & CEO', desc: 'Ph.D. in AI from HKU, former Microsoft Asia Research, Huawei Noah\'s Ark Lab, with extensive experience in industrial robotics', descZh: '香港大学人工智能博士，曾任微软亚洲研究院、华为诺亚方舟实验室，深耕工业机器人领域', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
+  { name: 'Dr. Zhanghui Kuang', nameZh: '旷章辉博士', role: 'Founder & CEO', roleZh: '创始人 & CEO', desc: 'Ph.D. in AI from HKU, former Microsoft Asia Research, Huawei Noah\'s Ark Lab, with extensive experience in industrial robotics', descZh: '香港大学人工智能博士，曾任微软亚洲研究院、华为诺亚方舟实验室，深耕工业机器人领域', image: 'img/kuangzhanghui.png' },
 ]
 
 // 滚动动画组件
@@ -59,7 +59,6 @@ export default function AboutPage() {
 
   // Hero 区域在滚动到 10% 时开始淡出，到 20% 时完全消失并隐藏
   const heroOpacity = useTransform(scrollYProgress, [0, 0.1, 0.2], [1, 0.3, 0])
-  const heroScale = useTransform(scrollYProgress, [0, 0.1], [1, 0.95])
   const heroY = useTransform(scrollYProgress, [0, 0.2], [0, -80])
 
   // 使用 useTransform 控制 visibility，当 opacity 为 0 时隐藏元素
@@ -81,31 +80,20 @@ export default function AboutPage() {
       >
         {/* 视频背景 */}
         <div className="absolute inset-0">
-          {/* 使用 placeholder 视频，实际项目中替换为真实视频 */}
           <video
             autoPlay
             loop
             muted
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1920&q=80"
           >
-            {/* 如果没有视频文件，使用图片作为背景 */}
-            <source src="/videos/hero.mp4" type="video/mp4" />
+            <source src="/video/VR遥操.mp4" type="video/mp4" />
           </video>
-          {/* 如果视频加载失败，显示背景图片 */}
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1920&q=80)',
-            }}
-          />
         </div>
 
         {/* 深色遮罩 */}
         <motion.div
           className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/70 to-background"
-          style={{ scale: heroScale }}
         />
 
         {/* 内容 */}
@@ -129,7 +117,7 @@ export default function AboutPage() {
             {t.heroTitle}
           </motion.h1>
 
-          <motion.button
+          {/* <motion.button
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.8 }}
@@ -139,7 +127,7 @@ export default function AboutPage() {
               <path d="M8 5v14l11-7z" />
             </svg>
             {t.watchVideo}
-          </motion.button>
+          </motion.button> */}
         </div>
 
         {/* 滚动提示 */}
