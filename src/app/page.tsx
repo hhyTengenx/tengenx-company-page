@@ -12,11 +12,11 @@ const products = [
     image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80',
   },
   {
-    id: 'tengenBrain',
+    id: 'txCarbo',
     image: 'https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80',
   },
   {
-    id: 'tengenBuddy',
+    id: 'tengenData',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
   },
 ]
@@ -46,9 +46,8 @@ export default function HomePage() {
   const getProductTitle = (id: string) => {
     switch (id) {
       case 'tx01': return t.tx01Title
+      case 'txCarbo': return t.txCarboTitle
       case 'tengenData': return t.tengenDataTitle
-      case 'tengenBrain': return t.tengenBrainTitle
-      case 'tengenBuddy': return t.tengenBuddyTitle
       default: return id
     }
   }
@@ -56,9 +55,8 @@ export default function HomePage() {
   const getProductDesc = (id: string) => {
     switch (id) {
       case 'tx01': return t.tx01Desc
+      case 'txCarbo': return t.txCarboDesc
       case 'tengenData': return t.tengenDataDesc
-      case 'tengenBrain': return t.tengenBrainDesc
-      case 'tengenBuddy': return t.tengenBuddyDesc
       default: return ''
     }
   }

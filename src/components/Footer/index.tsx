@@ -44,7 +44,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-foreground">{t.contact}</h4>
             <ul className="space-y-2">
-              <li className="text-sm text-muted-foreground">{t.salesEmail}: sales@tengenx.com</li>
+              <li className="text-sm text-muted-foreground">{t.salesEmail}: business@tengenx.com</li>
               <li className="text-sm text-muted-foreground">{t.prEmail}: pr@tengenx.com</li>
             </ul>
             <div className="flex gap-4 mt-4">

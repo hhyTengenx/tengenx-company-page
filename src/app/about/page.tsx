@@ -8,7 +8,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 const teamMembers = [
-  { name: 'Dr. Zhanghui Kuang', nameZh: '旷章辉博士', role: 'Founder & CEO', roleZh: '创始人 & CEO', desc: 'Ph.D. in AI from HKU, former Microsoft Asia Research, Huawei Noah\'s Ark Lab, SenseTime Industrial Robotics Head', descZh: '香港大学人工智能博士，曾任微软亚洲研究院、华为诺亚方舟实验室、商汤科技工业机器人事业部负责人', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
+  { name: 'Dr. Zhanghui Kuang', nameZh: '旷章辉博士', role: 'Founder & CEO', roleZh: '创始人 & CEO', desc: 'Ph.D. in AI from HKU, former Microsoft Asia Research, Huawei Noah\'s Ark Lab, with extensive experience in industrial robotics', descZh: '香港大学人工智能博士，曾任微软亚洲研究院、华为诺亚方舟实验室，深耕工业机器人领域', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
 ]
 
 // 滚动动画组件
@@ -304,8 +304,87 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Timeline Section - 公司发展历程 */}
       <section className="min-h-screen flex items-center bg-card relative z-10 py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <ScrollSection className="text-center mb-16">
+            <p className="text-sm tracking-[0.3em] mb-6 text-primary uppercase font-medium">
+              {t.globalLabel}
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground tracking-tight">
+              {t.globalTitle}
+            </h2>
+          </ScrollSection>
+
+          {/* Timeline */}
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary/30" />
+
+            {/* Timeline items */}
+            <div className="space-y-12">
+              {/* 2014 */}
+              <ScrollSection>
+                <div className="relative flex items-center">
+                  <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2" />
+                  <div className="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+                    <div className="bg-background p-6 rounded-xl border border-border">
+                      <span className="text-2xl font-bold text-primary">2014</span>
+                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">{t.timeline2014}</h3>
+                      <p className="text-muted-foreground">{t.timeline2014Desc}</p>
+                    </div>
+                  </div>
+                </div>
+              </ScrollSection>
+
+              {/* 2020 */}
+              <ScrollSection>
+                <div className="relative flex items-center">
+                  <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2" />
+                  <div className="ml-12 md:ml-auto md:w-1/2 md:pl-12">
+                    <div className="bg-background p-6 rounded-xl border border-border">
+                      <span className="text-2xl font-bold text-primary">2020</span>
+                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">{t.timeline2020}</h3>
+                      <p className="text-muted-foreground">{t.timeline2020Desc}</p>
+                    </div>
+                  </div>
+                </div>
+              </ScrollSection>
+
+              {/* 2021 */}
+              <ScrollSection>
+                <div className="relative flex items-center">
+                  <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2" />
+                  <div className="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+                    <div className="bg-background p-6 rounded-xl border border-border">
+                      <span className="text-2xl font-bold text-primary">2021</span>
+                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">{t.timeline2021}</h3>
+                      <p className="text-muted-foreground">{t.timeline2021Desc}</p>
+                    </div>
+                  </div>
+                </div>
+              </ScrollSection>
+
+              {/* 2024 */}
+              <ScrollSection>
+                <div className="relative flex items-center">
+                  <div className="absolute left-4 md:left-1/2 w-6 h-6 rounded-full bg-primary transform -translate-x-1/2 animate-pulse-glow" />
+                  <div className="ml-12 md:ml-auto md:w-1/2 md:pl-12">
+                    <div className="bg-primary/10 p-6 rounded-xl border border-primary/30">
+                      <span className="text-2xl font-bold text-primary">2024</span>
+                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">{t.timeline2024}</h3>
+                      <p className="text-muted-foreground">{t.timeline2024Desc}</p>
+                    </div>
+                  </div>
+                </div>
+              </ScrollSection>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="min-h-screen flex items-center bg-background relative z-10 py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <ScrollSection className="text-center mb-20">
             <p className="text-sm tracking-[0.3em] mb-6 text-primary uppercase font-medium">
