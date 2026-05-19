@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { LocaleProvider } from '@/lib/locale-context'
 
 export const metadata: Metadata = {
   title: '天元兴科技 TengenX - 通用工业具身智能平台',
@@ -14,7 +13,6 @@ export const metadata: Metadata = {
     description: '端到端控制技术，打造下一代工业机器人，解决传统工业机器人研发和实施成本过高的痛点。',
     type: 'website',
     locale: 'zh_CN',
-    alternateLocale: ['en_US'],
   },
 }
 
@@ -24,11 +22,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="zh" className="dark" data-scroll-behavior="smooth">
-      <body className="antialiased">
-        <LocaleProvider>
-          {children}
-        </LocaleProvider>
+    <html lang="zh" className="dark" data-scroll-behavior="smooth" suppressHydrationWarning>
+      <body className="antialiased" suppressHydrationWarning>
+        {children}
       </body>
     </html>
   )

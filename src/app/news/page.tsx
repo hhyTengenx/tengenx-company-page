@@ -1,39 +1,15 @@
 'use client'
 
-import { useLocale } from '@/lib/locale-context'
-import { pagesTranslations, homeTranslations } from '@/lib/i18n'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 const newsData = [
-  { id: 1, image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80' },
-  { id: 2, image: 'https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80' },
-  { id: 3, image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80' },
+  { id: 1, image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80', title: '天元兴完成弘德、盛世鸿元、海晏天使轮融资', date: '2026年4月' },
+  { id: 2, image: 'https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80', title: 'TX01进入新能源头部客户现场测试', date: '2026年3月' },
+  { id: 3, image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80', title: '锂电视觉大模型实现零漏检率', date: '2026年' },
 ]
 
 export default function NewsPage() {
-  const { locale } = useLocale()
-  const t = pagesTranslations[locale]
-  const ht = homeTranslations[locale]
-
-  const getNewsTitle = (id: number) => {
-    switch (id) {
-      case 1: return ht.news1Title
-      case 2: return ht.news2Title
-      case 3: return ht.news3Title
-      default: return ''
-    }
-  }
-
-  const getNewsDate = (id: number) => {
-    switch (id) {
-      case 1: return ht.news1Date
-      case 2: return ht.news2Date
-      case 3: return ht.news3Date
-      default: return ''
-    }
-  }
-
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
@@ -41,9 +17,9 @@ export default function NewsPage() {
       <section className="pt-32 pb-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold mb-4 text-foreground">{t.newsTitle}</h1>
+            <h1 className="text-5xl font-bold mb-4 text-foreground">新闻动态</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              {t.newsSubtitle}
+              天元兴最新动态
             </p>
           </div>
 
@@ -57,14 +33,14 @@ export default function NewsPage() {
                 <div className="aspect-video overflow-hidden">
                   <img
                     src={item.image}
-                    alt={getNewsTitle(item.id)}
+                    alt={item.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-6">
-                  <p className="text-sm text-muted-foreground mb-2">{getNewsDate(item.id)}</p>
+                  <p className="text-sm text-muted-foreground mb-2">{item.date}</p>
                   <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                    {getNewsTitle(item.id)}
+                    {item.title}
                   </h3>
                 </div>
               </a>

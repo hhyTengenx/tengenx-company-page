@@ -2,25 +2,20 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { useLocale } from '@/lib/locale-context'
-import { navTranslations } from '@/lib/i18n'
-import LanguageSwitcher from '@/components/LanguageSwitcher'
 import Logo from '@/components/Logo'
 
-const navItems: { key: keyof typeof navTranslations['en']; href: string }[] = [
-  { key: 'about', href: '/about' },
-  { key: 'products', href: '/products' },
-  { key: 'research', href: '/research' },
-  { key: 'news', href: '/news' },
-  { key: 'careers', href: '/careers' },
-  { key: 'contact', href: '/contact' },
+const navItems = [
+  { key: 'about', label: '关于我们', href: '/about' },
+  { key: 'products', label: '产品', href: '/products' },
+  // { key: 'research', label: '研发', href: '/research' },
+  // { key: 'news', label: '新闻', href: '/news' },
+  { key: 'careers', label: '招聘', href: '/careers' },
+  // { key: 'contact', label: '联系我们', href: '/contact' },
 ]
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const { locale } = useLocale()
-  const t = navTranslations[locale]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,7 +38,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3">
             <Logo size="sm" variant={isScrolled ? 'blue' : 'white'} />
             <span className={`text-xl font-bold ${isScrolled ? 'text-foreground' : 'text-white'}`}>
-              {locale === 'zh' ? '天元兴科技' : 'TengenX'}
+              天元兴科技
             </span>
           </Link>
 
@@ -58,10 +53,9 @@ export default function Navbar() {
                     : 'text-white/80 hover:text-white'
                 }`}
               >
-                {t[item.key]}
+                {item.label}
               </Link>
             ))}
-            <LanguageSwitcher />
           </div>
 
           <button
@@ -93,12 +87,9 @@ export default function Navbar() {
                 className="block py-3 text-muted-foreground hover:text-foreground transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t[item.key]}
+                {item.label}
               </Link>
             ))}
-            <div className="py-3 border-t border-border mt-2">
-              <LanguageSwitcher />
-            </div>
           </div>
         )}
       </nav>
