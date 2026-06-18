@@ -80,7 +80,7 @@ export default function AboutPage() {
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
           >
-            <source src="/video/VR遥操.mp4" type="video/mp4" />
+            <source src="/video/robot_demo_video.mp4" type="video/mp4" />
           </video>
         </div>
 
@@ -102,7 +102,7 @@ export default function AboutPage() {
             transition={{ duration: 1, delay: 0.5 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-12 leading-tight text-white"
           >
-            以世界级AI与机器人技术打造通用工业具身智能平台
+            构建工业世界模型底座，引领工业制造创新变革
           </motion.h1>
         </div>
 
@@ -145,15 +145,15 @@ export default function AboutPage() {
       {/* Philosophy Section */}
       <section className="min-h-screen flex items-center bg-card relative z-10 py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <ScrollSection className="order-2 lg:order-1">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
+            <ScrollSection className="order-2 lg:order-1 lg:col-span-7">
+              <div className="relative aspect-square rounded-2xl overflow-hidden flex items-center justify-center">
                 <img
-                  src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80"
+                  src="/img/TX01.png"
                   alt="Robot philosophy"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-4 rounded-2xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-card/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-card/40 to-transparent pointer-events-none" />
                 <motion.div
                   className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/20 rounded-full blur-xl"
                   animate={{ scale: [1, 1.2, 1] }}
@@ -162,19 +162,19 @@ export default function AboutPage() {
               </div>
             </ScrollSection>
 
-            <div className="order-1 lg:order-2 space-y-8">
+            <div className="order-1 lg:order-2 lg:col-span-5 space-y-8">
               <FadeInText delay={0} className="text-2xl md:text-3xl text-muted-foreground leading-relaxed font-light">
-                成立于2024年12月，团队拥有5年以上AI与机器人经验，服务10余家头部客户。
+                2025年4月从商汤科技工业机器人事业部独立分拆成立，团队拥有10+年AI与机器人研发经验，服务10余家工业头部客户。
               </FadeInText>
               <FadeInText delay={0.2} className="text-2xl md:text-3xl text-muted-foreground leading-relaxed font-light">
                 完整能力链条：AI算法研发、机器人控制、机械设计、软件工程——从产品POC到量产交付。
               </FadeInText>
               <FadeInText delay={0.4} className="text-2xl md:text-3xl text-muted-foreground leading-relaxed font-light">
-                VLM/VLA/VFA分层架构：场景理解、任务执行、精细操控——灵活高效、实时性好。
+                自研世界动作模型VLWA：理解世界、预测未来、指导动作、丝滑控制。
               </FadeInText>
               <FadeInText delay={0.6}>
                 <span className="text-3xl md:text-4xl font-semibold text-foreground">
-                  构建量产能力，实现50%以上成本下降。
+                  构建量产能力，实现30%以上成本下降。
                 </span>
               </FadeInText>
             </div>
@@ -191,35 +191,7 @@ export default function AboutPage() {
             </h2>
           </ScrollSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-            <ScrollSection>
-              <div className="bg-card p-10 rounded-2xl border border-border h-full card-glow">
-                <div className="w-12 h-12 mb-6 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-3xl font-bold mb-4 text-foreground">VLM/VLA/VFA架构</h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  视觉语言模型场景理解，视觉语言动作模型任务执行，视觉精细动作模型精准操控。
-                </p>
-              </div>
-            </ScrollSection>
-
-            <ScrollSection>
-              <div className="bg-card p-10 rounded-2xl border border-border h-full card-glow">
-                <div className="w-12 h-12 mb-6 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <h3 className="text-3xl font-bold mb-4 text-foreground">工业安全</h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  全身力控、断电保护，可选4转4驱全向移动或两轮差速底盘。
-                </p>
-              </div>
-            </ScrollSection>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-8">
             <ScrollSection>
               <div className="bg-card p-10 rounded-2xl border border-border h-full card-glow">
                 <div className="w-12 h-12 mb-6 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -227,9 +199,52 @@ export default function AboutPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
-                <h3 className="text-3xl font-bold mb-4 text-foreground">VR遥操系统</h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  沉浸式全身遥操，毫秒级同步，安全柔顺接触，全栈式AI工具链。
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">顶尖团队根基</h3>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  原商汤科技工业机器人事业部核心团队组建，全球前0.05%顶尖科学家团队，自带深厚的AI大模型技术沉淀。
+                </p>
+              </div>
+            </ScrollSection>
+
+            <ScrollSection>
+              <div className="bg-card p-10 rounded-2xl border border-border h-full card-glow">
+                <div className="w-12 h-12 mb-6 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">技术壁垒</h3>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  12年顶尖AI算法研发，覆盖AI 1.0到生成式AI 2.0完整周期，自研世界动作模型VLWA，构建工业具身大脑核心壁垒。
+                </p>
+              </div>
+            </ScrollSection>
+
+            <ScrollSection>
+              <div className="bg-card p-10 rounded-2xl border border-border h-full card-glow">
+                <div className="w-12 h-12 mb-6 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">商业落地闭环</h3>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  10年ToB商业化落地经验，5年工业批量落地经验，构建"数据-模型-落地"飞轮。
+                </p>
+              </div>
+            </ScrollSection>
+
+            <ScrollSection>
+              <div className="bg-card p-10 rounded-2xl border border-border h-full card-glow">
+                <div className="w-12 h-12 mb-6 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">工程化实力</h3>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  深厚工业know-how，多行业大规模部署交付能力，从产品POC到批量落地全链路闭环。
                 </p>
               </div>
             </ScrollSection>
@@ -255,9 +270,9 @@ export default function AboutPage() {
                   <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2" />
                   <div className="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
                     <div className="bg-background p-6 rounded-xl border border-border">
-                      <span className="text-2xl font-bold text-primary">2014</span>
-                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">商汤成立</h3>
-                      <p className="text-muted-foreground">创世界级竞赛多项纪录，Deep ID人脸识别技术突破</p>
+                      <span className="text-2xl font-bold text-primary">2014~2022</span>
+                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">商汤AI技术突破</h3>
+                      <p className="text-muted-foreground">商汤在AI机器视觉领域取得行业级技术突破，连续三年CVPR Nvidia AI城市挑战赛冠军</p>
                     </div>
                   </div>
                 </div>
@@ -268,9 +283,9 @@ export default function AboutPage() {
                   <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2" />
                   <div className="ml-12 md:ml-auto md:w-1/2 md:pl-12">
                     <div className="bg-background p-6 rounded-xl border border-border">
-                      <span className="text-2xl font-bold text-primary">2020</span>
-                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">全球化扩张</h3>
-                      <p className="text-muted-foreground">多国设立分支机构、联合实验室，筹建亚洲最大智算中心</p>
+                      <span className="text-2xl font-bold text-primary">2022~2025</span>
+                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">工业机器人事业部</h3>
+                      <p className="text-muted-foreground">商汤工业机器人事业部成立，服务宁德时代、中铁等行业头部客户，入选2024工信部典型应用案例</p>
                     </div>
                   </div>
                 </div>
@@ -278,12 +293,12 @@ export default function AboutPage() {
 
               <ScrollSection>
                 <div className="relative flex items-center">
-                  <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2" />
+                  <div className="absolute left-4 md:left-1/2 w-6 h-6 rounded-full bg-primary transform -translate-x-1/2" />
                   <div className="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
-                    <div className="bg-background p-6 rounded-xl border border-border">
-                      <span className="text-2xl font-bold text-primary">2021</span>
-                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">工业团队成立</h3>
-                      <p className="text-muted-foreground">商汤港交所上市，与中铁、宁德时代、富士康建立合作</p>
+                    <div className="bg-primary/10 p-6 rounded-xl border border-primary/30">
+                      <span className="text-2xl font-bold text-primary">2025.04</span>
+                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">天元兴成立</h3>
+                      <p className="text-muted-foreground">从商汤独立分拆成立深圳天元兴科技有限公司，完成核心团队组建</p>
                     </div>
                   </div>
                 </div>
@@ -291,12 +306,12 @@ export default function AboutPage() {
 
               <ScrollSection>
                 <div className="relative flex items-center">
-                  <div className="absolute left-4 md:left-1/2 w-6 h-6 rounded-full bg-primary transform -translate-x-1/2 animate-pulse-glow" />
+                  <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2 animate-pulse-glow" />
                   <div className="ml-12 md:ml-auto md:w-1/2 md:pl-12">
-                    <div className="bg-primary/10 p-6 rounded-xl border border-primary/30">
-                      <span className="text-2xl font-bold text-primary">2024</span>
-                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">天元兴成立</h3>
-                      <p className="text-muted-foreground">拆分成立深圳天元兴科技有限公司，引领具身智能发展</p>
+                    <div className="bg-background p-6 rounded-xl border border-border">
+                      <span className="text-2xl font-bold text-primary">2025.07</span>
+                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">TX01试产</h3>
+                      <p className="text-muted-foreground">TX01试产，原创算法SR-VLA在国际权威测试集上达到SOTA，入选CVPR26</p>
                     </div>
                   </div>
                 </div>
@@ -307,7 +322,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="min-h-screen flex items-center bg-background relative z-10 py-32">
+      {/* <section className="min-h-screen flex items-center bg-background relative z-10 py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <ScrollSection className="text-center mb-20">
             <h2 className="text-5xl md:text-7xl font-bold mb-8 text-foreground tracking-tight">
@@ -348,7 +363,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </main>

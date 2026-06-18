@@ -133,8 +133,8 @@ src/
 
 ## 📞 联系我们
 
-- **商务合作**：business@tengenx.com
-- **媒体合作**：pr@tengenx.com
+- **商务合作**：business@tengenx.ai
+- **媒体合作**：pr@tengenx.ai
 - **地址**：广东省深圳市
 
 ---

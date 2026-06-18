@@ -55,43 +55,46 @@ export default function ProductsPage() {
                       <svg className="w-5 h-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                       </svg>
-                      仿人形双臂系统：14关节，单臂12kg负载
+                      仿人形双臂系统：27个自由度（2腰部+2头部关节），单臂额定6kg、最大12kg
                     </li>
                     <li className="flex items-start gap-2">
                       <svg className="w-5 h-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
                       </svg>
-                      升降腰部系统：0-2.2m，多层立体作业
+                      升降腰部系统：整机高度125-175cm（行程50cm），作业至2.2米
                     </li>
                     <li className="flex items-start gap-2">
                       <svg className="w-5 h-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7V3z" />
                       </svg>
-                      移动底盘系统：4转4驱全向移动/两轮差速
+                      移动底盘系统：4轮4驱全向移动，激光+视觉融合导航，定位精度10cm
                     </li>
                     <li className="flex items-start gap-2">
                       <svg className="w-5 h-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                       </svg>
-                      载货平台：最大30kg
+                      载货平台：额定30kg，最大100kg
                     </li>
                     <li className="flex items-start gap-2">
                       <svg className="w-5 h-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
                       </svg>
-                      续航：4-8小时
+                      双电池热插拔系统：支持7×24小时作业，满电单次作业6-8小时
                     </li>
                   </ul>
                 </div>
 
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-4">安全保护系统</h3>
-                  <div className="flex gap-4">
+                  <div className="flex flex-wrap gap-4">
                     <div className="bg-background rounded-lg px-4 py-3 border border-border">
                       <span className="text-muted-foreground">全身力控</span>
                     </div>
                     <div className="bg-background rounded-lg px-4 py-3 border border-border">
                       <span className="text-muted-foreground">断电保护</span>
+                    </div>
+                    <div className="bg-background rounded-lg px-4 py-3 border border-border">
+                      <span className="text-muted-foreground">抗侧推力 &gt;400N</span>
                     </div>
                   </div>
                 </div>
@@ -99,20 +102,23 @@ export default function ProductsPage() {
             </div>
           </div>
 
-          {/* TX-CARBO */}
-          <div className="mb-20 bg-card rounded-2xl border border-border overflow-hidden">
+          {/* TX02 - 即将发布 */}
+          <div className="mb-20 bg-card rounded-2xl border border-dashed border-primary/40 overflow-hidden relative">
+            <span className="absolute top-6 right-6 z-10 px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary">
+              2026 即将发布
+            </span>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
               <div className="p-8 lg:p-12 order-2 lg:order-1">
-                <h2 className="text-3xl font-bold mb-2 text-foreground">TX-CARBO 装卸机器人</h2>
-                <p className="text-sm text-primary mb-4">智能物流解决方案</p>
+                <h2 className="text-3xl font-bold mb-2 text-foreground">TX02 重载机器人</h2>
+                <p className="text-sm text-primary mb-4">面向重载工业场景</p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  智能物流一体化解决方案，自主装卸货、自主拆码垛、多机协同、全流程管理。
+                  面向重载场景的双臂具身机器人，单臂额定负载不低于20公斤，承接重型上下料与物料搬运任务，适用于物流仓储、汽车制造等高强度工况。
                 </p>
 
                 <div className="mb-8">
                   <h3 className="text-lg font-semibold text-foreground mb-4">核心能力</h3>
                   <ul className="grid grid-cols-2 gap-3">
-                    {['自主装卸货', '自主拆码垛', '多机协同', '全流程管理'].map((cap, i) => (
+                    {['重型上下料', '重载物料搬运', '多机协同', '高负载柔性作业'].map((cap, i) => (
                       <li key={i} className="flex items-center gap-2 text-muted-foreground">
                         <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -124,21 +130,20 @@ export default function ProductsPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-4">技术规格</h3>
+                  <h3 className="text-lg font-semibold text-foreground mb-4">核心规格</h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>驱动：履带式差速</li>
-                    <li>负载：2kg-60kg</li>
-                    <li>效率：400循环/小时</li>
-                    <li>工作半径：1.8m</li>
-                    <li>支持箱体：200×200×200mm 至 800×800×800mm</li>
+                    <li>单臂额定负载：不低于20公斤</li>
+                    <li>本体形态：双臂具身机器人</li>
+                    <li>目标场景：物流仓储、汽车制造、重型上下料</li>
+                    <li>发布规划：2026年</li>
                   </ul>
                 </div>
               </div>
               <div className="aspect-[4/3] lg:aspect-auto lg:h-full order-1 lg:order-2">
                 <img
                   src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80"
-                  alt="TX-CARBO Robot"
-                  className="w-full h-full object-cover"
+                  alt="TX02 Robot"
+                  className="w-full h-full object-cover grayscale"
                 />
               </div>
             </div>

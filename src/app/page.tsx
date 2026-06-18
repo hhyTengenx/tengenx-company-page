@@ -7,44 +7,44 @@ import Logo from '@/components/Logo'
 const products = [
   {
     id: 'tx01',
-    image: '/img/robot.jpg',
+    image: '/img/TX01.png',
     title: 'TX01 工业具身机器人',
-    desc: '轮式底盘人形双臂机器人，14关节双臂（单臂12kg负载），升降腰部0-2.2m，4-8小时续航，面向工业场景。',
+    desc: '全栈自研轮式具身机器人，27个自由度，单臂额定6kg（最大12kg），升降高度125-175cm，4轮4驱全向移动，双电池热插拔支持7×24小时作业。',
   },
   {
-    id: 'txCarbo',
+    id: 'tx02',
     image: 'https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80',
-    title: 'TX-CARBO 装卸机器人',
-    desc: '智能装卸具身机器人，2-60kg负载，400循环/小时，自主拆码垛，多机协同。',
+    title: 'TX02 重载机器人',
+    desc: '面向重载场景的双臂具身机器人，单臂额定负载不低于20公斤，适配重型上下料与物料搬运（预计2026年发布）。',
   },
   {
     id: 'tengenData',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
     title: 'TengenData 平台',
-    desc: '低代码自训练平台，自动化模型训练，云边协同，支持4大类视觉感知任务。',
+    desc: '26B全工业场景多模态数据，完善高效的数据治理，自动化模型训练，云边协同。',
   },
 ]
 
 const news = [
   {
     id: 1,
-    image: '/img/robot.jpg',
-    href: '/news/1',
-    title: '天元兴完成弘德、盛世鸿元、海晏天使轮融资',
+    image: '/img/news1.png',
+    href: 'https://mp.weixin.qq.com/s/Ra7u3zzpESnpCS6m3Wm5ZQ',
+    title: '硬氪独家｜前商汤工业机器人团队完成数千万元天使轮融资，自研一体化控制轮式工业机器人',
     date: '2026年4月',
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80',
-    href: '/news/2',
-    title: 'TX01进入新能源头部客户现场测试',
-    date: '2026年3月',
+    image: '/img/news2.png',
+    href: 'https://mp.weixin.qq.com/s/iK4ofS06j-08lbot1mISpg',
+    title: 'RoboChallenge关键挑战登顶！TengenX0.1斩获"叠毛巾"任务冠军',
+    date: '2025年',
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
-    href: '/news/3',
-    title: '锂电视觉大模型实现零漏检率',
+    image: '/img/news3.png',
+    href: 'https://mp.weixin.qq.com/s/lmVdb2cZkQ_ILVSnG0_Ekw',
+    title: 'CVPR 2026｜提出FLARE框架，赋予VLA自主重试与环境重置能力',
     date: '2026年',
   },
 ]
@@ -83,7 +83,7 @@ export default function HomePage() {
 
             {/* 副标题 */}
             <p className="text-xl md:text-2xl text-white/80 mb-10 animate-fade-up [animation-delay:200ms]">
-              以VLM/VLA/VFA架构打造通用工业具身智能平台
+              自研世界动作模型VLWA，打造通用工业具身大脑
             </p>
 
             {/* CTA 按钮 */}
@@ -97,7 +97,7 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
-              <a
+              {/* <a
                 href="/products"
                 className="inline-flex items-center gap-2 px-8 py-4 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-all"
               >
@@ -105,7 +105,7 @@ export default function HomePage() {
                   <path d="M8 5v14l11-7z" />
                 </svg>
                 探索产品
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -119,13 +119,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">产品矩阵</h2>
-            <p className="text-muted-foreground text-lg">VLM/VLA/VFA分层架构，灵活高效</p>
+            <p className="text-muted-foreground text-lg">VLWA世界动作模型驱动，理解世界、预测未来、指导动作</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {products.map((product) => (
               <a
                 key={product.id}
-                href={`/products/${product.id}`}
+                // href={`/products/${product.id}`}
                 className="group bg-card rounded-xl overflow-hidden border border-border card-glow"
               >
                 <div className="aspect-[4/3] overflow-hidden relative">
@@ -143,12 +143,12 @@ export default function HomePage() {
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {product.desc}
                   </p>
-                  <span className="inline-flex items-center mt-4 text-primary font-medium text-sm group-hover:gap-2 gap-1 transition-all">
+                  {/* <span className="inline-flex items-center mt-4 text-primary font-medium text-sm group-hover:gap-2 gap-1 transition-all">
                     了解更多
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                  </span>
+                  </span> */}
                 </div>
               </a>
             ))}
@@ -179,18 +179,20 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-4xl font-bold">新闻动态</h2>
-            <a href="/news" className="text-primary font-medium hover:underline flex items-center gap-1">
+            {/* <a href="/news" className="text-primary font-medium hover:underline flex items-center gap-1">
               查看全部新闻
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </a>
+            </a> */}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {news.map((item) => (
               <a
                 key={item.id}
                 href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 transition-all"
               >
                 <div className="aspect-video overflow-hidden">
@@ -208,6 +210,23 @@ export default function HomePage() {
                 </div>
               </a>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section className="py-24 bg-card">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">合作伙伴</h2>
+            <p className="text-muted-foreground text-lg">服务新能源、轨交、汽车、制造等行业 10 余家头部客户</p>
+          </div>
+          <div className="flex items-center justify-center">
+            <img
+              src="/img/parters/parters.png"
+              alt="合作伙伴"
+              className="w-full max-w-4xl h-auto object-contain"
+            />
           </div>
         </div>
       </section>

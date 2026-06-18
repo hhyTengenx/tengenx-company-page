@@ -27,7 +27,7 @@ export default function ContactPage() {
                   </svg>
                   <div>
                     <h3 className="font-semibold text-foreground">销售咨询</h3>
-                    <p className="text-muted-foreground">business@tengenx.com</p>
+                    <p className="text-muted-foreground">business@tengenx.ai</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -36,7 +36,7 @@ export default function ContactPage() {
                   </svg>
                   <div>
                     <h3 className="font-semibold text-foreground">媒体合作</h3>
-                    <p className="text-muted-foreground">pr@tengenx.com</p>
+                    <p className="text-muted-foreground">pr@tengenx.ai</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">

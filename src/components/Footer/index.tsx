@@ -14,7 +14,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-foreground">天元兴科技</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              通用工业具身智能平台——VLM/VLA/VFA分层架构，打造下一代工业机器人。
+              工业具身大脑引领者 —— 自研世界动作模型VLWA，打造下一代工业机器人。
             </p>
           </div>
 
@@ -22,8 +22,8 @@ export default function Footer() {
           <div className="md:text-left">
             <h4 className="font-semibold mb-4 text-foreground">联系方式</h4>
             <ul className="space-y-2">
-              <li className="text-sm text-muted-foreground">销售咨询: business@tengenx.com</li>
-              <li className="text-sm text-muted-foreground">媒体合作: pr@tengenx.com</li>
+              <li className="text-sm text-muted-foreground">销售咨询: business@tengenx.ai</li>
+              <li className="text-sm text-muted-foreground">媒体合作: pr@tengenx.ai</li>
             </ul>
             {/* <div className="flex gap-4 mt-4 md:justify-left">
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
@@ -58,10 +58,10 @@ export default function Footer() {
           <p className="text-sm text-muted-foreground">
             © 2026 深圳天元兴科技有限公司
           </p>
-          <div className="flex gap-6">
+          {/* <div className="flex gap-6">
             <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">隐私政策</Link>
             <Link href="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">服务条款</Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

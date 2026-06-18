@@ -6,10 +6,10 @@ import Logo from '@/components/Logo'
 
 const navItems = [
   { key: 'about', label: '关于我们', href: '/about' },
-  { key: 'products', label: '产品', href: '/products' },
+  // { key: 'products', label: '产品', href: '/products' },
   // { key: 'research', label: '研发', href: '/research' },
   // { key: 'news', label: '新闻', href: '/news' },
-  { key: 'careers', label: '招聘', href: '/careers' },
+  // { key: 'careers', label: '招聘', href: '/careers' },
   // { key: 'contact', label: '联系我们', href: '/contact' },
 ]
 
