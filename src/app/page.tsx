@@ -58,7 +58,7 @@ export default function HomePage() {
       <section className="relative h-screen overflow-hidden">
         {/* 背景图片 */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-contain md:bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url(/img/robot.jpg)',
           }}

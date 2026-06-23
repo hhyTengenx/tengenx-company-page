@@ -78,7 +78,7 @@ export default function AboutPage() {
             loop
             muted
             playsInline
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-contain md:object-cover"
           >
             <source src="/video/robot_demo_video.mp4" type="video/mp4" />
           </video>
@@ -167,7 +167,7 @@ export default function AboutPage() {
                 2025年4月从商汤科技工业机器人事业部独立分拆成立，团队拥有10+年AI与机器人研发经验，服务10余家工业头部客户。
               </FadeInText>
               <FadeInText delay={0.2} className="text-2xl md:text-3xl text-muted-foreground leading-relaxed font-light">
-                完整能力链条：AI算法研发、机器人控制、机械设计、软件工程——从产品POC到量产交付。
+                完整能力链条：机器人设计、控制、AI算法研发、软件工程——从产品POC到量产交付。
               </FadeInText>
               <FadeInText delay={0.4} className="text-2xl md:text-3xl text-muted-foreground leading-relaxed font-light">
                 自研世界动作模型VLWA：理解世界、预测未来、指导动作、丝滑控制。
