@@ -6,6 +6,12 @@ import Logo from '@/components/Logo'
 
 const products = [
   {
+    id: 'tengenData',
+    image: '/img/tengendata.png',
+    title: 'TengenData 平台',
+    desc: '26B全工业场景多模态数据，完善高效的数据治理，自动化模型训练，云边协同。',
+  },
+  {
     id: 'tx01',
     image: '/img/TX01.png',
     title: 'TX01 工业具身机器人',
@@ -13,15 +19,9 @@ const products = [
   },
   {
     id: 'tx02',
-    image: 'https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80',
+    image: '/img/to_be_continued.png',
     title: 'TX02 重载机器人',
     desc: '面向重载场景的双臂具身机器人，单臂额定负载不低于20公斤，适配重型上下料与物料搬运（预计2026年发布）。',
-  },
-  {
-    id: 'tengenData',
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
-    title: 'TengenData 平台',
-    desc: '26B全工业场景多模态数据，完善高效的数据治理，自动化模型训练，云边协同。',
   },
 ]
 
@@ -31,21 +31,21 @@ const news = [
     image: '/img/news1.png',
     href: 'https://mp.weixin.qq.com/s/Ra7u3zzpESnpCS6m3Wm5ZQ',
     title: '硬氪独家｜前商汤工业机器人团队完成数千万元天使轮融资，自研一体化控制轮式工业机器人',
-    date: '2026年4月',
+    date: '2026年2月',
   },
   {
     id: 2,
     image: '/img/news2.png',
-    href: 'https://mp.weixin.qq.com/s/iK4ofS06j-08lbot1mISpg',
+    href: 'https://mp.weixin.qq.com/s/lmVdb2cZkQ_ILVSnG0_Ekw',
     title: 'RoboChallenge关键挑战登顶！TengenX0.1斩获"叠毛巾"任务冠军',
-    date: '2025年',
+    date: '2026年4月',
   },
   {
     id: 3,
     image: '/img/news3.png',
-    href: 'https://mp.weixin.qq.com/s/lmVdb2cZkQ_ILVSnG0_Ekw',
+    href: 'https://mp.weixin.qq.com/s/iK4ofS06j-08lbot1mISpg',
     title: 'CVPR 2026｜提出FLARE框架，赋予VLA自主重试与环境重置能力',
-    date: '2026年',
+    date: '2026年6月',
   },
 ]
 
