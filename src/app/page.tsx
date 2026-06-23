@@ -7,21 +7,21 @@ import Logo from '@/components/Logo'
 const products = [
   {
     id: 'tengenData',
-    image: '/img/tengendata.png',
+    image: '/img/tengendata.jpg',
     title: 'TengenData 平台',
-    desc: '26B全工业场景多模态数据，完善高效的数据治理，自动化模型训练，云边协同。',
+    desc: '26B 全工业场景多模态数据，完善高效的数据治理，自动化模型训练，云边协同。',
   },
   {
     id: 'tx01',
     image: '/img/TX01.png',
     title: 'TX01 工业具身机器人',
-    desc: '全栈自研轮式具身机器人，27个自由度，单臂额定6kg（最大12kg），升降高度125-175cm，4轮4驱全向移动，双电池热插拔支持7×24小时作业。',
+    desc: '全栈自研轮式具身机器人，27 个自由度，单臂额定 6kg（最大 12kg），升降高度 125-175cm，4 轮 4 驱全向移动，双电池热插拔支持 7×24 小时作业。',
   },
   {
     id: 'tx02',
     image: '/img/to_be_continued.png',
     title: 'TX02 重载机器人',
-    desc: '面向重载场景的双臂具身机器人，单臂额定负载不低于20公斤，适配重型上下料与物料搬运（预计2026年发布）。',
+    desc: '面向重载场景的双臂具身机器人，单臂额定负载不低于 20 公斤，适配重型上下料与物料搬运（预计 2026 年发布）。',
   },
 ]
 
@@ -37,14 +37,14 @@ const news = [
     id: 2,
     image: '/img/news2.png',
     href: 'https://mp.weixin.qq.com/s/lmVdb2cZkQ_ILVSnG0_Ekw',
-    title: 'RoboChallenge关键挑战登顶！TengenX0.1斩获"叠毛巾"任务冠军',
+    title: 'RoboChallenge 关键挑战登顶！TengenX0.1 斩获"叠毛巾"任务冠军',
     date: '2026年4月',
   },
   {
     id: 3,
     image: '/img/news3.png',
     href: 'https://mp.weixin.qq.com/s/iK4ofS06j-08lbot1mISpg',
-    title: 'CVPR 2026｜提出FLARE框架，赋予VLA自主重试与环境重置能力',
+    title: 'CVPR 2026｜提出 FLARE 框架，赋予 VLA 自主重试与环境重置能力',
     date: '2026年6月',
   },
 ]

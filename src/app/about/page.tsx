@@ -172,11 +172,6 @@ export default function AboutPage() {
               <FadeInText delay={0.4} className="text-2xl md:text-3xl text-muted-foreground leading-relaxed font-light">
                 自研世界动作模型VLWA：理解世界、预测未来、指导动作、丝滑控制。
               </FadeInText>
-              <FadeInText delay={0.6}>
-                <span className="text-3xl md:text-4xl font-semibold text-foreground">
-                  构建量产能力，实现30%以上成本下降。
-                </span>
-              </FadeInText>
             </div>
           </div>
         </div>
@@ -201,7 +196,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">顶尖团队根基</h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  原商汤科技工业机器人事业部核心团队组建，全球前0.05%顶尖科学家团队，自带深厚的AI大模型技术沉淀。
+                  原商汤科技工业机器人事业部核心团队组建，全球前 0.05% 顶尖科学家团队，自带深厚的AI大模型技术沉淀。
                 </p>
               </div>
             </ScrollSection>
@@ -215,7 +210,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">技术壁垒</h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  12年顶尖AI算法研发，覆盖AI 1.0到生成式AI 2.0完整周期，自研世界动作模型VLWA，构建工业具身大脑核心壁垒。
+                  12 年顶尖 AI 算法研发，覆盖 AI 1.0 到生成式 AI 2.0 完整周期，自研世界动作模型 VLWA，构建工业具身大脑核心壁垒。
                 </p>
               </div>
             </ScrollSection>
@@ -229,7 +224,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">商业落地闭环</h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  10年ToB商业化落地经验，5年工业批量落地经验，构建"数据-模型-落地"飞轮。
+                  10 年 ToB 商业化落地经验，5 年工业批量落地经验，构建"数据-模型-落地"飞轮。
                 </p>
               </div>
             </ScrollSection>
@@ -244,7 +239,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">工程化实力</h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  深厚工业know-how，多行业大规模部署交付能力，从产品POC到批量落地全链路闭环。
+                  深厚工业 know-how，多行业大规模部署交付能力，从产品 POC 到批量落地全链路闭环。
                 </p>
               </div>
             </ScrollSection>
@@ -271,8 +266,8 @@ export default function AboutPage() {
                   <div className="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
                     <div className="bg-background p-6 rounded-xl border border-border">
                       <span className="text-2xl font-bold text-primary">2014~2022</span>
-                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">商汤AI技术突破</h3>
-                      <p className="text-muted-foreground">商汤在AI机器视觉领域取得行业级技术突破，连续三年CVPR Nvidia AI城市挑战赛冠军</p>
+                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">商汤 AI 技术突破</h3>
+                      <p className="text-muted-foreground">商汤在 AI 机器视觉领域取得行业级技术突破，连续三年 CVPR Nvidia AI 城市挑战赛冠军</p>
                     </div>
                   </div>
                 </div>
@@ -285,7 +280,7 @@ export default function AboutPage() {
                     <div className="bg-background p-6 rounded-xl border border-border">
                       <span className="text-2xl font-bold text-primary">2022~2025</span>
                       <h3 className="text-xl font-bold mb-2 text-foreground mt-2">工业机器人事业部</h3>
-                      <p className="text-muted-foreground">商汤工业机器人事业部成立，服务宁德时代、中铁等行业头部客户，入选2024工信部典型应用案例</p>
+                      <p className="text-muted-foreground">商汤工业机器人事业部成立，服务宁德时代、中铁等行业头部客户，入选 2024 工信部典型应用案例</p>
                     </div>
                   </div>
                 </div>
@@ -310,8 +305,8 @@ export default function AboutPage() {
                   <div className="ml-12 md:ml-auto md:w-1/2 md:pl-12">
                     <div className="bg-background p-6 rounded-xl border border-border">
                       <span className="text-2xl font-bold text-primary">2025.07</span>
-                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">TX01试产</h3>
-                      <p className="text-muted-foreground">TX01试产，原创算法SR-VLA在国际权威测试集上达到SOTA，入选CVPR26</p>
+                      <h3 className="text-xl font-bold mb-2 text-foreground mt-2">TX01 试产</h3>
+                      <p className="text-muted-foreground">TX01 试产，原创算法 SR-VLA 在国际权威测试集上达到 SOTA，入选 CVPR26</p>
                     </div>
                   </div>
                 </div>
