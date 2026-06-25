@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: '天元兴科技专注于通用工业具身智能平台研发，以端到端控制技术打造TX01机器人，解决传统工业机器人痛点，服务宁德时代、欣旺达等头部客户。',
   keywords: ['具身智能', '工业机器人', '端到端控制', 'TengenX', '天元兴', 'TX01', 'embodied AI', 'industrial robotics'],
   icons: {
-    icon: '/favicon.ico',
+    icon: { url: '/img/favicon.ico' },
   },
   openGraph: {
     title: '天元兴科技 TengenX - 通用工业具身智能平台',
