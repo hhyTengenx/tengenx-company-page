@@ -1,7 +1,24 @@
 @import 'tailwindcss';
 
 @theme {
-  /* 深色科技感配色 */
+  /* 亮色主题（默认） */
+  --color-background: hsl(210 30% 98%);
+  --color-foreground: hsl(215 28% 17%);
+  --color-primary: hsl(210 100% 50%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-muted: hsl(215 25% 94%);
+  --color-muted-foreground: hsl(215 12% 42%);
+  --color-accent: hsl(210 100% 50%);
+  --color-accent-foreground: hsl(0 0% 100%);
+  --color-border: hsl(215 20% 88%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(215 28% 17%);
+  --color-glow: hsl(210 90% 55%);
+  --radius: 0.8rem;
+}
+
+/* 深色主题覆盖 */
+.dark {
   --color-background: hsl(220 15% 6%);
   --color-foreground: hsl(0 0% 95%);
   --color-primary: hsl(210 100% 50%);
@@ -14,7 +31,6 @@
   --color-card: hsl(220 15% 10%);
   --color-card-foreground: hsl(0 0% 95%);
   --color-glow: hsl(210 100% 60%);
-  --radius: 0.8rem;
 }
 
 @layer base {
@@ -89,7 +105,7 @@ html {
     to bottom,
     rgba(15, 23, 42, 0.6) 0%,
     rgba(15, 23, 42, 0.8) 50%,
-    rgba(15, 23, 42, 1) 100%
+    var(--color-background) 100%
   );
 }
 
