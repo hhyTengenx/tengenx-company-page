@@ -102,7 +102,9 @@ export default function AboutPage() {
             transition={{ duration: 1, delay: 0.5 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-12 leading-tight text-white"
           >
-            构建工业世界模型底座，引领工业制造创新变革
+            构建工业世界模型底座
+            <br/>
+            引领工业制造创新变革
           </motion.h1>
         </div>
 

@@ -215,7 +215,7 @@ export default function HomePage() {
       </section>
 
       {/* Partners Section */}
-      <section className="py-24 bg-card">
+      {/* <section className="py-24 bg-card">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">合作伙伴</h2>
@@ -229,7 +229,7 @@ export default function HomePage() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </main>
