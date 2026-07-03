@@ -145,7 +145,7 @@ export default function AboutPage() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="min-h-screen flex items-center bg-card relative z-10 py-32">
+      {/* <section className="min-h-screen flex items-center bg-card relative z-10 py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
             <ScrollSection className="order-2 lg:order-1 lg:col-span-7">
@@ -177,7 +177,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Values Section */}
       <section className="min-h-screen flex items-center bg-background relative z-10 py-32">
@@ -250,7 +250,7 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline Section */}
-      <section className="min-h-screen flex items-center bg-card relative z-10 py-32">
+      {/* <section className="min-h-screen flex items-center bg-card relative z-10 py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <ScrollSection className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground tracking-tight">
@@ -316,7 +316,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Team Section */}
       {/* <section className="min-h-screen flex items-center bg-background relative z-10 py-32">
