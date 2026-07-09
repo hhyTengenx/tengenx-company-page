@@ -54,14 +54,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-12 pt-8 border-t border-border flex flex-col items-center gap-2">
           <p className="text-sm text-muted-foreground">
-            © 2026 深圳天元兴科技有限公司
+            © 2026 tengenx.ai 版权所有
           </p>
-          {/* <div className="flex gap-6">
-            <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">隐私政策</Link>
-            <Link href="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">服务条款</Link>
-          </div> */}
+          <a
+            href="https://beian.miit.gov.cn/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground hover:text-primary transition-colors"
+          >
+            备案号：粤ICP备2026092828号-1
+          </a>
         </div>
       </div>
     </footer>
