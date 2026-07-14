@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Logo from '@/components/Logo'
 
 const navItems = [
-  { key: 'about', label: '关于我们', href: '/about' },
+  // { key: 'about', label: '关于我们', href: '/about' },
   // { key: 'products', label: '产品', href: '/products' },
   // { key: 'research', label: '研发', href: '/research' },
   // { key: 'news', label: '新闻', href: '/news' },

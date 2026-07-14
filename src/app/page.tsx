@@ -57,12 +57,23 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative h-screen overflow-hidden">
         {/* 背景图片 */}
-        <div
+        {/* <div
           className="absolute inset-0 bg-contain md:bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url(/img/robot.jpg)',
           }}
-        />
+        /> */}
+        <div className="absolute inset-0">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-contain md:object-cover"
+          >
+            <source src="/video/robot_demo_video1.mp4" type="video/mp4" />
+          </video>
+        </div>
         {/* 深色遮罩 */}
         <div className="absolute inset-0 hero-overlay" />
 
@@ -87,7 +98,7 @@ export default function HomePage() {
             </p>
 
             {/* CTA 按钮 */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up [animation-delay:300ms]">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up [animation-delay:300ms]">
               <a
                 href="/about"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/80 transition-all animate-glow"
@@ -97,7 +108,7 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
-              {/* <a
+              <a
                 href="/products"
                 className="inline-flex items-center gap-2 px-8 py-4 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-all"
               >
@@ -105,8 +116,8 @@ export default function HomePage() {
                   <path d="M8 5v14l11-7z" />
                 </svg>
                 探索产品
-              </a> */}
-            </div>
+              </a>
+            </div> */}
           </div>
         </div>
 
@@ -115,7 +126,7 @@ export default function HomePage() {
       </section>
 
       {/* Products Section */}
-      <section className="py-24 bg-background">
+      {/* <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">产品矩阵</h2>
@@ -143,18 +154,18 @@ export default function HomePage() {
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {product.desc}
                   </p>
-                  {/* <span className="inline-flex items-center mt-4 text-primary font-medium text-sm group-hover:gap-2 gap-1 transition-all">
+                  <span className="inline-flex items-center mt-4 text-primary font-medium text-sm group-hover:gap-2 gap-1 transition-all">
                     了解更多
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                  </span> */}
+                  </span>
                 </div>
               </a>
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Mission Section */}
       <section className="py-32 bg-card relative overflow-hidden">
@@ -175,16 +186,16 @@ export default function HomePage() {
       </section>
 
       {/* News Section */}
-      <section className="py-24 bg-background">
+      {/* <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-4xl font-bold">新闻动态</h2>
-            {/* <a href="/news" className="text-primary font-medium hover:underline flex items-center gap-1">
+            <a href="/news" className="text-primary font-medium hover:underline flex items-center gap-1">
               查看全部新闻
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </a> */}
+            </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {news.map((item) => (
@@ -212,7 +223,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Partners Section */}
       {/* <section className="py-24 bg-card">

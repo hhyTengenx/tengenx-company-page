@@ -56,7 +56,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col items-center gap-2">
           <p className="text-sm text-muted-foreground">
-            © 2026 tengenx.ai 版权所有
+            © 2026 TengenX.AI 版权所有
           </p>
           <a
             href="https://beian.miit.gov.cn/"

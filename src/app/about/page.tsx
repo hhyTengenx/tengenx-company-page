@@ -80,7 +80,7 @@ export default function AboutPage() {
             playsInline
             className="absolute inset-0 w-full h-full object-contain md:object-cover"
           >
-            <source src="/video/robot_demo_video.mp4" type="video/mp4" />
+            <source src="/video/robot_demo_video1.mp4" type="video/mp4" />
           </video>
         </div>
 
