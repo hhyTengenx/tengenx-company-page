@@ -55,21 +55,15 @@ export default function HomePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-screen overflow-hidden">
-        {/* 背景图片 */}
-        {/* <div
-          className="absolute inset-0 bg-contain md:bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/img/robot.jpg)',
-          }}
-        /> */}
+      <section className="relative overflow-hidden min-h-[100svh] md:h-screen flex items-center justify-center">
+        {/* 背景视频 */}
         <div className="absolute inset-0">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="absolute inset-0 w-full h-full object-contain md:object-cover"
+            className="w-full h-full object-cover"
           >
             <source src="/video/robot_demo_video1.mp4" type="video/mp4" />
           </video>
@@ -78,7 +72,7 @@ export default function HomePage() {
         <div className="absolute inset-0 hero-overlay" />
 
         {/* 内容 */}
-        <div className="relative h-full flex items-center justify-center">
+        <div className="relative z-10 w-full flex items-center justify-center">
           <div className="text-center max-w-4xl mx-auto px-6">
             {/* Logo */}
             <div className="mb-8 animate-fade-up flex justify-center">
@@ -171,7 +165,7 @@ export default function HomePage() {
       </section> */}
 
       {/* Mission Section */}
-      <section className="relative h-screen overflow-hidden">
+      <section className="relative overflow-hidden min-h-[100svh] md:h-screen flex items-center justify-center">
         {/* 背景视频 */}
         <div className="absolute inset-0">
           <video
@@ -179,7 +173,7 @@ export default function HomePage() {
             loop
             muted
             playsInline
-            className="absolute inset-0 w-full h-full object-contain md:object-cover"
+            className="w-full h-full object-cover"
           >
             <source src="/video/robot_demo_video2.mp4" type="video/mp4" />
           </video>
@@ -191,7 +185,7 @@ export default function HomePage() {
         <div className="absolute top-0 left-0 right-0 h-60 bg-gradient-to-b from-background to-transparent" />
 
         {/* 内容 */}
-        <div className="relative h-full flex items-center justify-center">
+        <div className="relative z-10 w-full flex items-center justify-center">
           <div className="text-center max-w-4xl mx-auto px-6">
             <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up">
               让机器人变得真正有用

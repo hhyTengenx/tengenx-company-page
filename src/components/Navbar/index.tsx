@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Logo from '@/components/Logo'
 
-const navItems = [
+const navItems: { key: string, label: string, href: string }[] = [
   // { key: 'about', label: '关于我们', href: '/about' },
   // { key: 'products', label: '产品', href: '/products' },
   // { key: 'research', label: '研发', href: '/research' },
@@ -27,11 +27,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'bg-background/95 backdrop-blur-md border-b border-border'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -47,18 +46,17 @@ export default function Navbar() {
               <Link
                 key={item.key}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  isScrolled
+                className={`text-sm font-medium transition-colors hover:text-primary ${isScrolled
                     ? 'text-muted-foreground hover:text-foreground'
                     : 'text-white/80 hover:text-white'
-                }`}
+                  }`}
               >
                 {item.label}
               </Link>
             ))}
           </div>
 
-          <button
+          {/* <button
             className={`lg:hidden p-2 ${isScrolled ? 'text-foreground' : 'text-white'}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
@@ -75,7 +73,7 @@ export default function Navbar() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
-          </button>
+          </button> */}
         </div>
 
         {isMobileMenuOpen && (
