@@ -89,13 +89,16 @@ export default function HomePage() {
 
             {/* 主标题 */}
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up [animation-delay:100ms]">
-              具身智能机器人
+              构建工业世界模型底座
+            </h1>
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up [animation-delay:100ms]">
+              引领工业制造创新变革
             </h1>
 
             {/* 副标题 */}
-            <p className="text-xl md:text-2xl text-white/80 mb-10 animate-fade-up [animation-delay:200ms]">
+            {/* <p className="text-xl md:text-2xl text-white/80 mb-10 animate-fade-up [animation-delay:200ms]">
               自研世界动作模型VLWA，打造通用工业具身大脑
-            </p>
+            </p> */}
 
             {/* CTA 按钮 */}
             {/* <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up [animation-delay:300ms]">
@@ -168,21 +171,36 @@ export default function HomePage() {
       </section> */}
 
       {/* Mission Section */}
-      <section className="py-32 bg-card relative overflow-hidden">
-        {/* 背景装饰 */}
-        <div className="absolute top-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <section className="relative h-screen overflow-hidden">
+        {/* 背景视频 */}
+        <div className="absolute inset-0">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-contain md:object-cover"
+          >
+            <source src="/video/robot_demo_video2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        {/* 深色遮罩 */}
+        <div className="absolute inset-0 hero-overlay" />
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-5xl md:text-6xl font-bold mb-8 text-foreground">
+        {/* 内容 */}
+        <div className="relative h-full flex items-center justify-center">
+          <div className="text-center max-w-4xl mx-auto px-6">
+            <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up">
               让机器人变得真正有用
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg md:text-xl text-white/80 leading-relaxed animate-fade-up [animation-delay:100ms]">
               解决传统工业机器人研发和现场实施成本过高的痛点。端到端方案只需适配场景数据，无需复杂现场调试。
             </p>
           </div>
         </div>
+
+        {/* 底部渐变 */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* News Section */}
