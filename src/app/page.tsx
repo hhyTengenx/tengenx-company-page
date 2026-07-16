@@ -125,7 +125,7 @@ export default function HomePage() {
         </div>
 
         {/* 底部渐变 */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+        {/* <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" /> */}
       </section>
 
       {/* Products Section */}
@@ -185,7 +185,10 @@ export default function HomePage() {
           </video>
         </div>
         {/* 深色遮罩 */}
-        <div className="absolute inset-0 hero-overlay" />
+        <div className="absolute inset-0 hero-overlay-invert" />
+
+        {/* 顶部渐变（衔接上一屏） */}
+        <div className="absolute top-0 left-0 right-0 h-60 bg-gradient-to-b from-background to-transparent" />
 
         {/* 内容 */}
         <div className="relative h-full flex items-center justify-center">
@@ -193,14 +196,11 @@ export default function HomePage() {
             <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up">
               让机器人变得真正有用
             </h2>
-            <p className="text-lg md:text-xl text-white/80 leading-relaxed animate-fade-up [animation-delay:100ms]">
-              解决传统工业机器人研发和现场实施成本过高的痛点。端到端方案只需适配场景数据，无需复杂现场调试。
-            </p>
           </div>
         </div>
 
         {/* 底部渐变 */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+        {/* <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" /> */}
       </section>
 
       {/* News Section */}

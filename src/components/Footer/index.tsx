@@ -14,7 +14,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-foreground">天元兴科技</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              工业具身大脑引领者 —— 自研世界动作模型VLWA，打造下一代工业机器人。
+              工业具身大脑引领者。
             </p>
           </div>
 
