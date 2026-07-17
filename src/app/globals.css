@@ -31,6 +31,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* 触屏设备：原生 proximity 软吸附（桌面端由 JS 接管整屏滚动） */
+@media (pointer: coarse) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+}
+
 /* 科技感动画效果 */
 @keyframes glow {
   0%, 100% {
@@ -87,18 +94,27 @@ html {
 .hero-overlay {
   background: linear-gradient(
     to bottom,
-    rgba(15, 23, 42, 0.6) 50%,
-    rgba(15, 23, 42, 0.8) 75%,
-    rgba(15, 23, 42, 1) 100%
+    rgba(15, 23, 42, 0.4) 80%,
+    rgba(15, 23, 42, 0.6) 90%,
+    rgba(15, 23, 42, 0.8) 100%
   );
 }
 
 .hero-overlay-invert {
   background: linear-gradient(
-    to top,
-    rgba(15, 23, 42, 0.6) 100%,
-    rgba(15, 23, 42, 0.8) 75%,
-    rgba(15, 23, 42, 1) 50%
+    to bottom,
+    rgba(15, 23, 42, 0.8) 10%,
+    rgba(15, 23, 42, 0.6) 20%,
+    rgba(15, 23, 42, 0) 100%
+  );
+}
+
+/* section 顶部衔接渐变（原生 linear-gradient，避免 Tailwind 渐变工具在 standalone build 下失效） */
+.section-fade-top {
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.8) 0%,
+    rgba(15, 23, 42, 0) 100%
   );
 }
 

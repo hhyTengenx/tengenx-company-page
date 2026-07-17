@@ -3,6 +3,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Logo from '@/components/Logo'
+import SmoothScrollSnap from '@/components/SmoothScrollSnap'
 
 const products = [
   {
@@ -53,9 +54,10 @@ export default function HomePage() {
   return (
     <main className="min-h-screen">
       <Navbar />
+      <SmoothScrollSnap />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden min-h-[100svh] md:h-screen flex items-center justify-center">
+      <section className="relative overflow-hidden min-h-[100svh] md:h-screen flex items-center justify-center snap-start">
         {/* 背景视频 */}
         <div className="absolute inset-0">
           <video
@@ -76,7 +78,7 @@ export default function HomePage() {
           <div className="text-center max-w-4xl mx-auto px-6">
             {/* Logo */}
             <div className="mb-8 animate-fade-up flex justify-center">
-              <div className="w-20 h-20 rounded-xl bg-primary/10 flex items-center justify-center animate-pulse-glow p-2">
+              <div className="w-20 h-20 rounded-xl bg-primary/10 flex items-center justify-center p-2">
                 <Logo size="lg" variant="blue" />
               </div>
             </div>
@@ -165,7 +167,7 @@ export default function HomePage() {
       </section> */}
 
       {/* Mission Section */}
-      <section className="relative overflow-hidden min-h-[100svh] md:h-screen flex items-center justify-center">
+      <section className="relative overflow-hidden min-h-[100svh] md:h-screen flex items-center justify-center snap-start">
         {/* 背景视频 */}
         <div className="absolute inset-0">
           <video
@@ -182,7 +184,7 @@ export default function HomePage() {
         <div className="absolute inset-0 hero-overlay-invert" />
 
         {/* 顶部渐变（衔接上一屏） */}
-        <div className="absolute top-0 left-0 right-0 h-60 bg-gradient-to-b from-background to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-30 section-fade-top" />
 
         {/* 内容 */}
         <div className="relative z-10 w-full flex items-center justify-center">

@@ -5,7 +5,7 @@ import Logo from '@/components/Logo'
 
 export default function Footer() {
   return (
-    <footer className="bg-card border-t border-border">
+    <footer className="bg-card border-t border-border snap-start">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           <div>
