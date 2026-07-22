@@ -7,25 +7,28 @@ export default function Footer() {
   return (
     <footer className="bg-card border-t border-border snap-start">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          <div className="display-grid">
             <div className="flex items-center gap-3 mb-4">
               <Logo size="sm" variant="blue" />
               <span className="text-xl font-bold text-foreground">天元兴科技</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              工业具身大脑引领者。
+              工业具身大脑先行者和引领者
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              邮箱：business@tengenx.ai
             </p>
           </div>
 
 
-          <div className="md:text-left">
+          {/* <div className="md:text-left">
             <h4 className="font-semibold mb-4 text-foreground">联系方式</h4>
             <ul className="space-y-2">
               <li className="text-sm text-muted-foreground">销售咨询: business@tengenx.ai</li>
               <li className="text-sm text-muted-foreground">媒体合作: pr@tengenx.ai</li>
             </ul>
-            {/* <div className="flex gap-4 mt-4 md:justify-left">
+            <div className="flex gap-4 mt-4 md:justify-left">
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
@@ -46,8 +49,8 @@ export default function Footer() {
                   <path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.736-5.441 3.977-.391 7.413 1.406 7.671 4.02.26 2.609-2.757 5.047-6.735 5.441zM9.054 14.5c-2.057.209-3.606 1.535-3.449 2.949.154 1.414 1.86 2.377 3.917 2.168 2.057-.209 3.607-1.535 3.449-2.949-.153-1.414-1.861-2.377-3.917-2.168zM19.109 5.484c-1.067-.797-2.553-1.207-4.091-1.207-.26 0-.52.016-.777.047l-.009.001c-.527.06-.847.535-.715 1.063.133.527.613.848 1.14.727 1.021-.131 2.088.033 2.893.58.805.55 1.261 1.367 1.261 2.267 0 .527.427.957.953.957.527 0 .957-.43.957-.957 0-1.397-.655-2.757-1.769-3.677zM21.078 3.609c-1.532-1.13-3.678-1.717-5.864-1.717-.353 0-.707.022-1.057.065l-.009.001c-.627.07-1.005.636-.847 1.264.159.628.727.996 1.355.876 1.332-.163 2.745.025 3.817.825 1.072.8 1.67 1.987 1.67 3.267 0 .627.51 1.135 1.137 1.135.627 0 1.137-.508 1.137-1.135 0-1.8-.875-3.542-2.376-4.677z" />
                 </svg>
               </a>
-            </div> */}
-          </div>
+            </div>
+          </div> */}
 
           <div className="md:text-right flex md:flex-col md:items-end md:gap-4">
             <img src="/img/QR-code.jpg" alt="二维码" className="w-24 h-24 rounded" />

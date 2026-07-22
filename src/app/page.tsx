@@ -67,7 +67,7 @@ export default function HomePage() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="/video/robot_demo_video1.mp4" type="video/mp4" />
+            <source src="/video/robot_demo_video.mp4" type="video/mp4" />
           </video>
         </div>
         {/* 深色遮罩 */}
@@ -76,19 +76,10 @@ export default function HomePage() {
         {/* 内容 */}
         <div className="relative z-10 w-full flex items-center justify-center">
           <div className="text-center max-w-4xl mx-auto px-6">
-            {/* Logo */}
-            <div className="mb-8 animate-fade-up flex justify-center">
-              <div className="w-20 h-20 rounded-xl bg-primary/10 flex items-center justify-center p-2">
-                <Logo size="lg" variant="blue" />
-              </div>
-            </div>
 
             {/* 主标题 */}
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up [animation-delay:100ms]">
-              构建工业世界模型底座
-            </h1>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up [animation-delay:100ms]">
-              引领工业制造创新变革
+              让机器人变得真正有用
             </h1>
 
             {/* 副标题 */}
@@ -167,8 +158,7 @@ export default function HomePage() {
       </section> */}
 
       {/* Mission Section */}
-      <section className="relative overflow-hidden min-h-[100svh] md:h-screen flex items-center justify-center snap-start">
-        {/* 背景视频 */}
+      {/* <section className="relative overflow-hidden min-h-[100svh] md:h-screen flex items-center justify-center snap-start">
         <div className="absolute inset-0">
           <video
             autoPlay
@@ -180,13 +170,10 @@ export default function HomePage() {
             <source src="/video/robot_demo_video2.mp4" type="video/mp4" />
           </video>
         </div>
-        {/* 深色遮罩 */}
         <div className="absolute inset-0 hero-overlay-invert" />
 
-        {/* 顶部渐变（衔接上一屏） */}
         <div className="absolute top-0 left-0 right-0 h-30 section-fade-top" />
 
-        {/* 内容 */}
         <div className="relative z-10 w-full flex items-center justify-center">
           <div className="text-center max-w-4xl mx-auto px-6">
             <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up">
@@ -195,9 +182,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* 底部渐变 */}
-        {/* <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" /> */}
-      </section>
+      </section> */}
 
       {/* News Section */}
       {/* <section className="py-24 bg-background">

@@ -124,3 +124,7 @@ html {
   background: linear-gradient(var(--color-card), var(--color-card)) padding-box,
               linear-gradient(135deg, var(--color-primary), var(--color-glow)) border-box;
 }
+
+.display-grid {
+  display:grid;
+}
