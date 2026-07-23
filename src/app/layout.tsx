@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: '天元兴科技 TengenX - 构建工业世界模型底座，引领工业制造创新变革',
-  description: '构建工业世界模型底座，引领工业制造创新变革',
-  keywords: ['具身智能', '工业机器人', '端到端控制', 'TengenX', '天元兴', 'TX01', 'embodied AI', 'industrial robotics'],
+  title: '天元兴科技 TengenX - 工业具身大脑先行者和引领者',
+  description: '工业具身大脑先行者和引领者',
+  keywords: ['具身智能', '工业机器人', '具身大脑', 'TengenX', '天元兴', 'TX01', 'embodied AI', 'industrial robotics'],
   icons: {
     icon: { url: '/img/favicon.ico' },
   },
   openGraph: {
-    title: '天元兴科技 TengenX - 构建工业世界模型底座，引领工业制造创新变革',
-    description: '构建工业世界模型底座，引领工业制造创新变革',
+    title: '天元兴科技 TengenX - 工业具身大脑先行者和引领者',
+    description: '工业具身大脑先行者和引领者',
     type: 'website',
     locale: 'zh_CN',
   },
