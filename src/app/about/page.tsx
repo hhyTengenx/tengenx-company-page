@@ -138,7 +138,7 @@ export default function AboutPage() {
               让机器人
             </h2>
             <h2 className="text-5xl md:text-8xl font-bold mb-8 text-foreground tracking-tight">
-              变得真正有用
+              走进万千工厂
             </h2>
           </ScrollSection>
         </div>

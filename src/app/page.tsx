@@ -79,7 +79,7 @@ export default function HomePage() {
 
             {/* 主标题 */}
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up [animation-delay:100ms]">
-              让机器人变得真正有用
+              让机器人走进万千工厂
             </h1>
 
             {/* 副标题 */}
@@ -177,7 +177,7 @@ export default function HomePage() {
         <div className="relative z-10 w-full flex items-center justify-center">
           <div className="text-center max-w-4xl mx-auto px-6">
             <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up">
-              让机器人变得真正有用
+              让机器人走进万千工厂
             </h2>
           </div>
         </div>
@@ -240,6 +240,45 @@ export default function HomePage() {
           </div>
         </div>
       </section> */}
+
+      {/* SEO 文案区：视觉隐藏（sr-only），供搜索引擎抓取真实内容 */}
+      <section className="sr-only" aria-label="网站内容概览">
+        <h2>关于天元兴科技</h2>
+        <p>
+          天元兴科技（TengenX）是工业具身大脑先行者和引领者，2025
+          年成立，团队源自商汤科技工业机器人业务。公司自研世界动作模型
+          VLWA，以端到端控制方案解决传统工业机器人研发与现场实施成本过高的痛点——只需适配场景数据，无需复杂现场调试，让机器人走进万千工厂。
+        </p>
+
+        <h2>产品与解决方案</h2>
+        <ul>
+          {products.map((p) => (
+            <li key={p.id}>
+              <h3>{p.title}</h3>
+              <p>{p.desc}</p>
+            </li>
+          ))}
+        </ul>
+
+        <h2>新闻动态</h2>
+        <ul>
+          {news.map((n) => (
+            <li key={n.id}>
+              <h3>{n.title}</h3>
+              <p>{n.date}</p>
+            </li>
+          ))}
+        </ul>
+
+        <h2>合作伙伴</h2>
+        <p>
+          天元兴科技服务新能源、轨道交通、汽车、制造等行业 10
+          余家头部客户，以工业具身大脑赋能真实生产场景。
+        </p>
+
+        <h2>商务联系</h2>
+        <p>商务咨询：business@tengenx.ai</p>
+      </section>
 
       <Footer />
     </main>
