@@ -115,6 +115,23 @@ export default function HomePage() {
         {/* <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" /> */}
       </section>
 
+      {/* 公司简介 Section */}
+      <section className="py-24 md:py-32 bg-background">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <h2 className="text-4xl md:text-5xl font-bold mb-10 text-center text-foreground">
+            关于天元兴
+          </h2>
+          <div className="space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
+            <p>
+              天元兴科技（TengenX AI）是国内领先的工业具身智能机器人企业，由原商汤科技工业机器人事业部核心团队独立孵化组建。公司自研端到端闭环控制架构及TengenX系列具身大模型，专注推动工业机器人从被动指令执行向自主智能端到端控制跨越式升级。
+            </p>
+            <p>
+              旗下核心产品轮式人形双臂机器人TX01，深度融合 VLA 与世界模型，具备感知-规划-预测-控制的能力，已在锂电、新能源等赛道头部企业开启规模化落地验证。依托自研一体化控制架构，突破柔性制造核心技术瓶颈，引领工业机器人迈入端到端智能控制全新阶段。
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Products Section */}
       {/* <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">

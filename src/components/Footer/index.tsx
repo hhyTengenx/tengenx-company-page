@@ -19,6 +19,12 @@ export default function Footer() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               邮箱：business@tengenx.ai
             </p>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              地址：深圳市南山区桃源街道平山社区留仙大道1195号匠造数字产业园 A栋东座8406C
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              电话：19098557113
+            </p>
           </div>
 
 
@@ -53,7 +59,7 @@ export default function Footer() {
           </div> */}
 
           <div className="md:text-right flex md:flex-col md:items-end md:gap-4">
-            <img src="/img/QR-code.jpg" alt="二维码" className="w-24 h-24 rounded" />
+            <img src="/img/QR-code.jpg" alt="二维码" className="w-38 h-38 rounded" />
           </div>
         </div>
 
