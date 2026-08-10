@@ -75,6 +75,15 @@ export default function Footer() {
           >
             备案号：粤ICP备2026092828号-1
           </a>
+          <a
+            href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002015437"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-2"
+          >
+            <img src="/img/粤公网安备.png" alt="粤公网安备" className="w-4 h-4 object-contain" />
+            粤公网安备44030002015437号
+          </a>
         </div>
       </div>
     </footer>
